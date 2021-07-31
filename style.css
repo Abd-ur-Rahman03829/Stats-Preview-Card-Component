@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --very-dark-blue : hsl(233, 47%, 7%);
+  --Dark-desaturated-blue: hsl(244, 38%, 16%);
+  --Soft-violet: hsl(277, 64%, 61%);
+  --White: hsl(0, 0%, 100%);
+  --Slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+  --Slight-transparent-white: hsla(0, 0%, 100%, 0.6);
+}
+
+body {
+  height: 100vh;
+  background-color: var(--very-dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;;
+}
+
+.card {
+  background: var(--Dark-desaturated-blue);
+  height: 90%;
+  width: 375px;
+  text-align: center;
+  font-family: Inter;
+}
+
+.img {
+  height: 32%;
+  width: 100%;
+  background-image: url(images/image-header-mobile.jpg);
+  background-size: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+.text {
+  color: var(--White);
+}
+
+h2 {
+  font-family: Lexend Deca;
+  font-weight: 400;
+  padding: 20px 70px;
+}
+
+h2 span {
+  color: var(--Soft-violet);
+}
+
+.paragraph {
+  color: var(--Slight-transparent-white);
+  padding: 0 66px;
+}
+
+.overview {
+  padding: 15px 0;
+}
+
+.overview span {
+  font-family: Lexend Deca;
+  font-weight: 400;
+  color: var(--White);
+}
+
+.overview p {
+  color: var(--Slightly-transparent-white);
+  text-transform: uppercase;
+  font-size: xx-small;
+  padding-top: 5px;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 1440px) {
+  .card {
+    height: 25rem;
+    width: 60rem;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .img {
+    height: 100%;
+    width: 100%;
+    background-image: url(images/image-header-mobile.jpg);
+    background-size: cover;
+    border-radius: 0 0 0 0;
+  }
+  h2 {
+    padding: 40px 110px 40px 65px;
+    text-align: left;
+  }
+  .paragraph {
+    padding: 30px 66px;
+    text-align: left;
+  }
+  .overview {
+    display: inline-block;
+    padding: 20px 10px;
+    margin: 10px 10px 10px 10px;
+    text-align: left;
+  }
+}
